@@ -1,0 +1,12 @@
+.site-header .brand img{
+    width:260px;
+    height:auto;
+    display:block;
+    max-width:100%;
+}
+@media(max-width:768px){
+    .site-header .brand img{
+        width:210px;
+        height:auto;
+    }
+}
