@@ -135,17 +135,18 @@ textarea {
 }
 
 .btn-outline {
-    border-color: #9bbde3;
+    border: 1px solid #A7D8FF;
     background: transparent;
+    color: #A7D8FF;
     box-shadow: none;
-    color: var(--ink-900)
+    transition: all .25s ease;
 }
 
 .btn-outline:hover {
-    border-color: #fff;
-    background:#04142E;
-    color: var(--ink-900);
-    box-shadow: none
+    background: #A7D8FF;
+    border-color: #A7D8FF;
+    color: #04142E;
+    transform: translateY(-2px);
 }
 
 :focus-visible {
@@ -830,7 +831,7 @@ textarea {
 }
 
 .cta .btn:hover {
-    background: #dff4ff
+    background: #1c6e9a
 }
 
 /* Contact and footer */
@@ -838,13 +839,14 @@ textarea {
     display: grid;
     grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
     gap: 62px
+    
 }
 
 .form-card {
     padding: 36px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    background:#04142E;
+    background: #8cbaff;
     box-shadow: var(--shadow-sm)
 }
 
@@ -873,7 +875,7 @@ textarea {
     padding: 12px 13px;
     border: 1px solid #c5d7e9;
     border-radius: 7px;
-    background:#04142E;
+    background:#ffffff;
     color: var(--text);
     line-height: 1.4;
     transition: border-color .2s, box-shadow .2s
@@ -972,7 +974,7 @@ textarea:focus {
     justify-content: space-between;
     margin-top: 42px;
     padding-top: 21px;
-    border-top: 1px solid rgba(255, 255, 255, .15);
+    border-top: 1px solid rgb(245, 243, 243);
     font-size: .81rem
 }
 
@@ -1071,5 +1073,4 @@ textarea:focus {
 
 .whatsapp-float:after {
     display: none
-}
 }

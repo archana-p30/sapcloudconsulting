@@ -1,0 +1,6 @@
+{
+  "name": "brainbyteconsulting",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

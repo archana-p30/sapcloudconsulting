@@ -52,11 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
     document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
   }
-  const form = document.querySelector('#contact-form');
-  if (form) form.addEventListener('submit', event => {
-    event.preventDefault();
-    const notice = document.querySelector('.notice');
-    if (notice) { notice.setAttribute('tabindex', '-1'); notice.style.display = 'block'; notice.focus(); }
-    form.reset();
-  });
+  const form=document.getElementById("contact-form");
+  if(form){
+   form.addEventListener("submit",async(e)=>{
+    e.preventDefault();
+    const notice=document.querySelector(".notice");
+    const data=Object.fromEntries(new FormData(form).entries());
+    const r=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
+    if(r.ok){if(notice){notice.style.display="block";notice.textContent="Thank you! Your enquiry has been sent."; } form.reset();}
+    else{alert("Unable to send enquiry.");}
+   });
+  }
 });
