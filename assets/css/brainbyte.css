@@ -1,2 +1,99 @@
 /* BrainByte light corporate theme; preserves the shared responsive component system. */
-:root{--ink-950:#071d41;--ink-900:#0b2854;--blue-700:#116bd6;--blue-600:#1474e8;--cyan-400:#26c9e6;--sky-50:#f6f9fd;--text:#152b50;--muted:#5d708c;--border:#d7e3f1}.site-header{border-bottom:1px solid rgba(125,211,252,.16);background:#04142E;box-shadow:0 4px 18px rgba(3,12,30,.18)}.brand{color:#fff}.nav-links{color:#cbd9ee}.nav-links a:hover,.nav-links a.active{color:#fff}.nav-links .nav-cta{border-color:#1474e8;background:#1474e8;color:#fff}.nav-links .nav-cta:hover{background:#0f62c5}.nav-toggle{color:#fff}.hero{color:#fff}.section.alt{background:#f5f9fd}.card{background:#fff}.eyebrow{color:#126ad3}.btn{border-radius:7px}.btn-outline{border-color:#85a7cf;color:#123866}.hero .btn-outline{color:#fff}.hero .btn-outline:hover{color:#071d41}.panel{background:linear-gradient(135deg,#0b2c5c,#176fd3)}.site-footer,.premium-footer{background:#071d41}.brand img{width:184px;height:48px}@media(max-width:620px){.brand img{width:164px;height:44px}}
+:root {
+    --ink-950: #071d41;
+    --ink-900: #0b2854;
+    --blue-700: #116bd6;
+    --blue-600: #1474e8;
+    --cyan-400: #26c9e6;
+    --sky-50: #f6f9fd;
+    --text: #152b50;
+    --muted: #5d708c;
+    --border: #d7e3f1
+}
+
+.site-header {
+    border-bottom: 1px solid rgba(125, 211, 252, .16);
+    background: #04142E;
+    box-shadow: 0 4px 18px rgba(3, 12, 30, .18)
+}
+
+.brand {
+    color: #fff
+}
+
+.nav-links {
+    color: #cbd9ee
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff
+}
+
+.nav-links .nav-cta {
+    border-color: #1474e8;
+    background: #1474e8;
+    color: #fff
+}
+
+.nav-links .nav-cta:hover {
+    background: #0f62c5
+}
+
+.nav-toggle {
+    color: #fff
+}
+
+.hero {
+    color: #fff
+}
+
+.section.alt {
+    background: #f5f9fd
+}
+
+.card {
+    background: #fff
+}
+
+.eyebrow {
+    color: #126ad3
+}
+
+.btn {
+    border-radius: 7px
+}
+
+.btn-outline {
+    border-color: #85a7cf;
+    color: #123866
+}
+
+.hero .btn-outline {
+    color: #fff
+}
+
+.hero .btn-outline:hover {
+    color: #071d41
+}
+
+.panel {
+    background: linear-gradient(135deg, #0b2c5c, #176fd3)
+}
+
+.site-footer,
+.premium-footer {
+    background: #071d41
+}
+
+.brand img {
+    width: 184px;
+    height: 48px
+}
+
+@media(max-width:620px) {
+    .brand img {
+        width: 164px;
+        height: 44px
+    }
+}

@@ -1,0 +1,112 @@
+/* Targeted production fixes: contrast, card surfaces, form visibility, and inner-page hero artifact. */
+.page-hero::before {
+    display: none
+}
+
+.card,
+.technology-card,
+.premium-industry,
+.case-card {
+    background: #fff;
+    color: var(--text)
+}
+
+.card h3,
+.technology-card h3,
+.premium-industry h3,
+.case-card h3 {
+    color: var(--ink-900)
+}
+
+.card p,
+.technology-card p,
+.premium-industry p,
+.case-card p {
+    color: var(--muted)
+}
+
+.tech {
+    background: #fff;
+    color: #405775;
+    border-color: var(--border)
+}
+
+.tech:hover {
+    border-color: var(--blue-600);
+    color: var(--ink-900)
+}
+
+.form-card {
+    background: #0b2c5c;
+    border-color: #1b4b87
+}
+
+.form-card .field label {
+    color: #fff
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    background: #fff;
+    color: #071d41;
+    border-color: #b8cbe0
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+    color: #64748b
+}
+
+.form-card select option {
+    background: #fff;
+    color: #071d41
+}
+
+.cta .btn,
+.premium-cta .btn {
+    background: #1474e8;
+    border-color: #1474e8;
+    color: #fff
+}
+
+.cta .btn:hover,
+.premium-cta .btn:hover {
+    background: #0f62c5;
+    color: #fff
+}
+
+.cta .btn-outline,
+.premium-cta .btn-outline {
+    background: transparent;
+    border-color: #fff;
+    color: #fff
+}
+
+.cta .btn-outline:hover,
+.premium-cta .btn-outline:hover {
+    background: #fff;
+    color: #071d41
+}
+
+.nav-links .nav-cta {
+    color: #fff
+}
+
+.nav-links .nav-cta:hover {
+    color: #fff
+}
+
+.btn-outline {
+    color: #123866
+}
+
+.btn-outline:hover {
+    color: #071d41
+}
+
+/* Remove orb only from Home page */
+
+body.home .hero::before{
+    display:none !important;
+}
